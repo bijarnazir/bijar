@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>My Fav Poem</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;700&family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f4f1ea;
+  --card:#ffffff;
+  --text:#1f1f1f;
+  --muted:#6b6b6b;
+  --border:#e6e0d6;
+  --accent:#1f6f5b;
+  --hover:#e9f2ee;
+}
+
+body{
+  margin:0;
+  font-family:'Noto Naskh Arabic', serif;
+  background:var(--bg);
+  color:var(--text);
+  direction:rtl;
+  text-align:right;
+}
+
+header{
+  text-align:center;
+  padding:25px;
+  background:var(--card);
+  border-bottom:1px solid var(--border);
+}
+
+header h1{
+  margin:0;
+  color:var(--accent);
+}
+
+.search-box{
+  width:80%;
+  max-width:500px;
+  margin:15px auto;
+  display:block;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:white;
+  font-size:14px;
+}
+
+.search-box:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(31,111,91,0.15);
+}
+
+.container{
+  width:80%;
+  max-width:800px;
+  margin:20px auto;
+}
+
+details.poet{
+  background:var(--card);
+  margin-bottom:15px;
+  border-radius:12px;
+  border:1px solid var(--border);
+  padding:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.03);
+}
+
+summary.poet-title{
+  cursor:pointer;
+  font-weight:bold;
+  font-size:18px;
+  padding:10px;
+  color:var(--accent);
+}
+
+summary.poet-title:hover{
+  background:var(--hover);
+  border-radius:8px;
+}
+
+details.poem{
+  margin:10px 15px;
+  padding:10px;
+  border-right:3px solid var(--accent);
+  cursor:pointer;
+  background:#faf8f3;
+  border-radius:8px;
+}
+
+details.poem summary{
+  font-weight:bold;
+  font-size:16px;
+}
+
+.poem-text{
+  font-family:'Amiri', serif;
+  line-height:1.9;
+  margin-top:10px;
+  white-space:pre-wrap;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  font-size:13px;
+  color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>شعرا دڵخواز</h1>
+<p>پڕۆژەیەکی سادە بۆ لێگەڕیانێ ل دیڤ باشترین شعران</p>
+</header>
+
+<input class="search-box" id="search" type="text" placeholder="لێگەڕیان بۆ شاعری یان شعرێ...">
+
+<div class="container" id="poetList">
+
+<!-- Poet -->
+<details class="poet">
+<summary class="poet-title">هەژار موکریانی</summary>
+
+<details class="poem">
+<summary>هەر کوردم</summary>
+<div class="poem-text">
+ئبە دەربەدەری یان لە ماڵی خۆم
+لە خاکی عەرەب، لە ئێران و ڕۆم
+کۆک و پۆشتە بم، ڕووت و ڕەجاڵ بم
+کۆشکم دە قات بێ، وێرانەماڵ بم
+ئازا و ڕزگار بم شادان و خەندان
+یان زنجیر لە مل لە سووچی زیندان
+ساغ بم جحێڵ بم بگرم گوێسوانان
+یان زار و نزار لە نەخۆشخانان
+دانیشم لەسەر تەختی خونکاری
+یان لە کۆڵانان بکەم هەژاری
+کوردم و لەڕێی کورد و کوردستان
+سەر لەپێناوم گیان لەسەر دەستان
+بەکوردی دەژیم بەکوردی دەمرم
+بەکوردی دەیدەم وەرامی قەبرم
+بەکوردی دیسان زیندوو دەبمەوە
+لەو دنیاش بۆ کورد تێ هەڵدەچمەوە
+</div>
+</details>
+
+</details>
+
+<!-- Poet 2 -->
+<details class="poet">
+<summary class="poet-title">ژیلا حسەینی</summary>
+
+<details class="poem">
+<summary>مەیێ بۆ لام</summary>
+<div class="poem-text">
+نا، نامەوێ تۆ بێی بۆ لام
+هەرچەن وڵاتیش تاریکە و بەبێ چرام
+بیرم کردووی و خەمبارم
+بەقەد باڵای ئەوینیشت
+دڵ پڕ لە خۆزگە و لە هیوام
+بەڵام نا، نامەوێ تۆ بێیت
+تۆ ناتوانی لای من بژیت
+زستانی من دوایی نایەت
+تۆش بەهاریت
+</div>
+</details>
+
+</details>
+
+<!-- Poet 3 -->
+<details class="poet">
+<summary class="poet-title">موئەیەد تەیب</summary>
+
+<details class="poem">
+<summary>چارن چار</summary>
+<div class="poem-text">
+چارن چار
+تەهران کڕنیە
+ئەنقەرە زرکێتکەکا دڕ
+شام و بەغدا دوو مێشێن شڕ
+ئەڤ برینە دلێ منە
+ئەڤ برینە جانێ منە
+ئەڤ برینە کوردستانا منە
+</div>
+</details>
+
+</details>
+
+</div>
+
+<footer>© 2026 شعرا دڵخواز</footer>
+
+<script>
+const search = document.getElementById("search");
+const poets = document.querySelectorAll("details.poet");
+
+search.addEventListener("input", function(){
+  const value = this.value.toLowerCase();
+
+  poets.forEach(poet => {
+    const text = poet.innerText.toLowerCase();
+    poet.style.display = text.includes(value) ? "block" : "none";
+  });
+});
+</script>
+
+</body>
+</html>
